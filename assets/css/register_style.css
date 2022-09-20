@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+form{
+    text-align: center;
+}
+.video_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+video #bgvid{
+  min-width: 100%; 
+  min-height: 1200px; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    transition:color 0.5s, background-color 1s;
+    color: #06fcf3;
+}
+.wrapper{
+    /*background-image: url('../images/backgrounds/2.jpeg');*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    min-width: 950px;
+}
+.login_box{
+    /*background-image: url('../images/backgrounds/handphone.jpg');*/
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 7%;
+    width: 25%;
+    border-radius: 7px;
+}
+.purple_layer{
+    background-image: linear-gradient(to right bottom, #00fff7, #00e9ff, #00d2ff, #00b8ff, #009bff);
+    background-size: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 5px;
+    border-radius: 7px;
+    opacity: 0.88;
+}
+.login_header{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+input[type="submit"] {
+    background-color:  white;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+    transition:color 1.5s, background-color 1s;
+    color: #06fcf3;
+    
+}
+input[type="submit"]:hover {
+    background-color: #06fcf3;
+    color: white;
+}
+input[type="submit"]:active{
+    background-color: #06fcf3;
+    color: #06fcf3;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    background: transparent;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 3px;
+    border-bottom: 1px solid white; 
+}
+#second{
+    display: none;
+}
+::-webkit-input-placeholder{
+    color: #bfb2d9;
+}
